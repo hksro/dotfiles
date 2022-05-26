@@ -1,0 +1,42 @@
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                            # The name of the module we are configuring is "character"
+success_symbol = "[>](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+error_symbol = "[<](bold red)"
+
+[line_break]
+disabled = false
+
+[username]
+style_user = "white bold"
+style_root = "black bold"
+format = "[$user]($style)"
+show_always = true
+disabled = false
+
+[hostname]
+ssh_only = false
+format = "@[$hostname](bold red) "
+trim_at = "."
+disabled = false
+
+[time]
+disabled = false
+time_format = "%FT%T%z"
+utc_time_offset = "+9"
+
+[directory]
+truncation_length = 5
+truncate_to_repo = true
+
+[cmd_duration]
+min_time = 500
+format = "underwent [$duration](bold yellow) "
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
