@@ -5,6 +5,10 @@ if [ "$(uname)" != "Darwin" ] ; then
 	exit 1
 fi
 
+# Disable creating .DS_STORE
+# cf. https://nori-life.com/delete-ds-store-for-mac/
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
 # Install xcode
 xcode-select --install > /dev/null
 

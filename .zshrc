@@ -1,3 +1,10 @@
+# 【解決済み】Error: Cannot install in Homebrew on ARM processor in Intel default prefix (/usr/local)!のエラーを解消する方法｜シロウブログ「change life」
+# https://shiro-changelife.com/error-cannot-install-in-homebrew/
+
+export PATH="/opt/homebrew/bin:$PATH"
+
+eval "$(starship init zsh)"
+
 # Alias
 #=================================
 ## General
