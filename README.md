@@ -1,5 +1,31 @@
 # dotfiles
 
+## Change shortcut
+
+- Move forcus to next window: Command + F1
+
+```
+open "x-apple.systempreferences:com.apple.preference.keyboard"
+```
+
+cf. [[小ネタ][Mac] 同一アプリケーションでウィンドウを切り替えるショートカット | DevelopersIO](https://dev.classmethod.jp/articles/mac-next-window-shortcut/)
+
+```zsh
+open "x-apple.systempreferences:com.apple.preference.general"
+```
+
+cf. [前回と同じ App やウインドウが開かないようにする - Apple サポート (日本)](https://support.apple.com/ja-jp/HT204005)
+
+
+## Show All Files
+
+```zsh
+defaults write com.apple.finder AppleShowAllFiles TRUE
+$ llall Finder
+```
+
+cf. [【Mac】隠しファイルを常に表示させる - Qiita](https://qiita.com/y_otake/items/cc9e2461c62eb6f9c53a)
+
 ## Disable DS_Store
 
 ```
@@ -157,4 +183,18 @@ Press Enter to open github.com in your browser...
 
 cf. [ようこそdotfilesの世界へ - Qiita](https://qiita.com/yutkat/items/c6c7584d9795799ee164)
 cf. [支給されたMacの環境をdotfilesでセットアップしてみた | DevelopersIO](https://dev.classmethod.jp/articles/joined-mac-dotfiles-customize/)
+
+## Look up & data detectors using Tap with three finger
+
+System Preferences > Trackpad > Point & Click > Look up & date detectors
+
+Select `Tap with three fingers` .
+
+cf. [How to Get Back Three-Finger Tap in OS X El Capitan](https://notebooks.com/2015/10/05/how-to-get-back-three-finger-tap-os-x-el-capitan/)
+
+## Terraform
+
+```zsh
+tfenv --version
+```
 
