@@ -1,0 +1,32 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.tree.indent": 11,
+    "terminal.integrated.fontFamily": "Ricty, \"DroidSansMono Nerd Font\"",
+    "terminal.external.osxExec": "iTerm.app",
+    "redhat.telemetry.enabled": true,
+    "go.toolsManagement.autoUpdate": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.zoomLevel": 1,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "workbench.colorTheme": "One Monokai",
+    "githubPullRequests.queries": [
+        {
+            "label": "Waiting For My Review",
+            "query": "is:open review-requested:${user}"
+        },
+        {
+            "label": "Assigned To Me",
+            "query": "is:open assignee:${user}"
+        },
+        {
+            "label": "Created By Me",
+            "query": "is:open author:${user}"
+        }
+    ]
+}
